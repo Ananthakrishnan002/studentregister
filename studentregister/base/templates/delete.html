@@ -1,0 +1,22 @@
+
+{% extends 'main.html' %}
+{% block content %}
+
+<!-- <form action="" method="POST">
+    {% csrf_token %}
+    <P>Are y9u sure want to delete {{obj}} ?</P>
+    <a href="{{request.META.HTTP_REFERER}}""> Go back</a>
+    <input type="submit" value="confirm">
+</form> -->
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="card-body">
+        <h5 class="card-title">Delete</h5>
+        <p class="card-text"> Are you sure want to delete </p>
+        <a href="{{request.META.HTTP_REFERER}}" class="btn btn-primary">Back</a>
+        <input class="btn btn-primary" type="submit" value="confirm">
+  </div>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% block content%}
+
+<table class="table table-borderless">
+    <tbody>
+      <tr>
+        <th scope="row">NAME</th>
+        <td>{{student.name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Email id</th>
+        <td>{{student.email}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Adress</th>
+        <td colspan="2">{{student.adress}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Phone Number</th>
+        <td colspan="2">{{student.phonenumber}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Branch</th>
+        <td colspan="2">{{student.branch}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+{% endblock content %}
